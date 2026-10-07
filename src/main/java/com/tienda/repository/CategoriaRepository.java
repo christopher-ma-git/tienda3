@@ -4,10 +4,6 @@
  */
 package com.tienda.repository;
 
-/**
- *
- * @author allam
- */
 
 import com.tienda.domain.Categoria;
 import java.util.List;

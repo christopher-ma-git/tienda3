@@ -1,13 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.tienda.domain;
-
-/**
- *
- * @author allam
- */
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -25,12 +16,10 @@ import lombok.Data;
 @Table(name = "categoria")
 public class Categoria implements Serializable {
 
-    // Se recomienda añadir un serialVersionUID
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_categoria")
     private Integer idCategoria;
 
     @Column(unique = true, nullable = false, length = 50)
@@ -38,7 +27,6 @@ public class Categoria implements Serializable {
     @Size(max = 50)
     private String descripcion;
 
-    @Column(length = 1024)
     @Size(max = 1024)
     private String rutaImagen;
 
